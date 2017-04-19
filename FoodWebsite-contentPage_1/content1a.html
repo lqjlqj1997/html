@@ -1,0 +1,1286 @@
+<!doctype html>
+<meta charset=utf-8>
+<html>
+<head>
+	<title>Menu</title>
+	<!--Importing css-->
+	<link rel="stylesheet" href="content1a_style.css">
+	
+	<!--Script for resizing font-->
+	<script>
+		function toggleModal(id){
+			var box = document.getElementById(id);
+			if(box.style.visibility == "visible"){
+				box.style.visibility = "hidden";
+			}
+			else{
+				box.style.visibility = "visible";
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<!-- Title-->
+	<header>
+		<h1>Food Menu</h1>
+	</header>
+	
+	<!--Food selection bar-->
+	<div class="navBar">
+		<ul>
+			<li><hr></li>
+			<li><a href="">&#171; Home &#187;</a></li>
+			<li><hr></li>
+			<li><br></li>
+			<li><a href="#mainDish">Main Dishes</a></li> 
+			<li><a href="#sideDish">Side Dishes</a></li> 
+			<li><a href="#dessert">Desserts</a></li>
+		</ul>
+	</div>
+	
+	<!--Main content-->
+	<article>
+		<!--Main Dishes Section-->
+		<div id="mainDish">
+			<br>
+			<br>
+			<h2>Main Dishes</h2>
+			
+			<!--Rice-->
+			<h3><i>Rice</i></h3>
+			
+			<a onclick="toggleModal('r1')">
+				<div>
+					<img src="food\rice\bakedfriedbrownrice.jpg">
+					<p>Baked Fried Brown Rice</p> 
+				</div>
+			</a>
+			<div class="modal" id="r1">
+				<div class="modalContent">
+					<img src="food\rice\bakedfriedbrownrice.jpg">
+					<p class="info"><br>You will love the chewy, crispy texture of our baked fried brown rice recipe. 
+					<br>
+					<br>
+					Sriracha, pineapple, cashews, and edamame create a tasty meal that is a much healthier alternative to standard fried rice.
+					</p>
+					<p class= "price">
+						Price: $9.50&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('r1')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('r2')">
+				<div>
+					<img src="food\rice\cheesebakedrice.jpg">
+					<p>Cheese Baked Rice</p> 
+				</div>
+			</a>
+			<div class="modal" id="r2">
+				<div class="modalContent">
+					<img src="food\rice\cheesebakedrice.jpg">
+					<p class="info"><br>
+					Our casserole-style recipe is sure to be a hit at family dinners, get-togethers, and holiday parties. 
+					This full-flavored casserole combines butternut squash, herbs, cheese, and rice to create a warm and hearty dish. 
+					<br>
+					<br>
+					It yields 6 servings.
+					</p>
+					<p class= "price">
+						Price: $36.50&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('r2')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('r3')">
+				<div>
+					<img src="food\rice\chickedchoprice.jpg">
+					<p>Chicken Chop Rice</p>
+				</div>
+			</a>
+			<div class="modal" id="r3">
+				<div class="modalContent">
+					<img src="food\rice\chickedchoprice.jpg">
+					<p class="info"><br>
+					Western cuisine with rice. 
+					<br>
+					A beautiful mixture of rice and chicken meat only found in Malaysia and Singapore region. 
+					<br>
+					<br>
+					It taste better with sauce such as mushroom or black pepper.
+					</p>
+					<p class= "price">
+						Price: $12.50&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('r3')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('r4')">
+				<div>
+					<img src="food\rice\porkchoprice.jpg">
+					<p>Pork Chop Rice</p>
+				</div>
+			</a>
+			<div class="modal" id="r4">
+				<div class="modalContent">
+					<img src="food\rice\porkchoprice.jpg">
+					<p class="info"><br>
+					Herb-cooked porkchop with rice.
+					<br>
+					The meat is cooked with multiple herbs, giving it an exquisite taste.
+					</p>
+					<p class= "price">
+						Price: $14.50&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('r4')">[Close]</a>
+				</div>
+			</div>
+			
+			<!--Carne-->
+			<h3><i>Carne</i></h3>
+			
+			<a onclick="toggleModal('c1')">
+				<div>
+					<img src="food\carne\beefchilli.jpg">
+					<p>Beef Chilli</p> 
+				</div>
+			</a>
+			<div class="modal" id="c1">
+				<div class="modalContent">
+					<img src="food\carne\beefchilli.jpg">
+					<p class="info"><br>
+					Serve this chunky sirloin version of chili in a tin cup, for a dish that warms not only the stomach but also the hands. 
+					<br>
+					A simmering pot of chili warms up any occasion, from game day and tailgate parties to cozy family meals. 
+					<br>
+					The one-pot wonder is just the thing for stress-free entertaining .
+					</p>
+					<p class= "price">
+						Price: $51.00&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('c1')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('c2')">
+				<div>
+					<img src="food\carne\carneasada.jpg">
+					<p>Carneasada</p> 
+				</div>
+			</a>
+			<div class="modal" id="c2">
+				<div class="modalContent">
+					<img src="food\carne\carneasada.jpg">
+					<p class="info"><br>
+					Carne Asada, or “roast meat” is a Mexican dish that’s commonly associated with barbecues. 
+					<br>
+					The spices used vary by region, but carne asada is almost always made with thin, cheap cuts of beef such as skirt steak or hanger steak. 
+					<br>
+					They may not be the most tender cuts, but they pack a wallop of flavour.
+					</p>
+					<p class= "price">
+						Price: $24.00&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('c2')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('c3')">
+				<div>
+					<img src="food\carne\milanesaalalapolitana.jpg">
+					<p>Milanesaal A La Politana</p>
+				</div>
+			</a>
+			<div class="modal" id="c3">
+				<div class="modalContent">
+					<img src="food\carne\milanesaalalapolitana.jpg">
+					<p class="info"><br>
+					While a squeeze of lemon is sometimes enough to accompany a milanesa, this recipe takes it one step further. 
+					<br>
+					A thin coating of tomato sauce over the crispy crust, melty cheese and a sprinkling of oregano lends an Italian flavor to the dish for a tasty twist on a classic. 
+					<br>
+					And since these are oven fried on baking sheets, you don't even have to feel that guilty about the cheese.
+					</p>
+					<p class= "price">
+						Price: $21.00&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('c3')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('c4')">
+				<div>
+					<img src="food\carne\salpicon.jpg">
+					<p>Salpicon</p>
+				</div>
+			</a>
+			<div class="modal" id="c4">
+				<div class="modalContent">
+					<img src="food\carne\salpicon.jpg">
+					<p class="info"><br>
+					Popular throughout Central America, salpicón is a refreshing salad that is great as a topping for tostadas or wrapped in fresh corn tortillas.
+					</p>
+					<p class= "price">
+						Price: $18.50&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('c4')">[Close]</a>
+				</div>
+			</div>
+			
+			<!--Pasta-->
+			<h3><i>Pasta</i></h3>
+			
+			<a onclick="toggleModal('p1')">
+				<div>
+					<img src="food\pasta\fourcheesepasta.jpg">
+					<p>Four Cheese Pasta</p> 
+				</div>
+			</a>
+			<div class="modal" id="p1">
+				<div class="modalContent">
+					<img src="food\pasta\fourcheesepasta.jpg">
+					<p class="info"><br>
+					Pastas made with four different types of cheese - Parmesan, Cheddar, Brie and Emmental. 
+					<br>Sounds like a dream!
+					</p>
+					<p class= "price">
+						Price: $23.00&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('p1')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('p2')">
+				<div>
+					<img src="food\pasta\cabonarapasta.png">
+					<p>Carbonara Pasta</p> 
+				</div>
+			</a>
+			<div class="modal" id="p2">
+				<div class="modalContent">
+					<img src="food\pasta\cabonarapasta.png">
+					<p class="info"><br>
+					This simple Roman pasta dish derives its name from 'carbone' meaning coal. 
+					<br>It was a pasta popular with the coal miners. 
+					<br>The original recipe calls for guanciale, which is pig's cheek, but since its not easily available, the chef has used bacon instead.
+					</p>
+					<p class= "price">
+						Price: $17.50&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('p2')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('p3')">
+				<div>
+					<img src="food\pasta\gnocchiwithtomatosauce.png">
+					<p>Gnocchi with Tomato Sauce</p>
+				</div>
+			</a>
+			<div class="modal" id="p3">
+				<div class="modalContent">
+					<img src="food\pasta\gnocchiwithtomatosauce.png">
+					<p class="info"><br>
+					Gnocchi is a type of pasta in the form of dumplings which are usually made with wheat flour, potato, semolina, egg and breadcrumbs. 
+					<br>They can be served with various sauces, this recipe uses a freshly-made tangy tomato sauce.
+					</p>
+					<p class= "price">
+						Price: $18.50&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('p3')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('p4')">
+				<div>
+					<img src="food\pasta\pastaconpomodoroEbasilico.jpg">
+					<p>Pasta Con Pomodoro E Basilico</p>
+				</div>
+			</a>
+			<div class="modal" id="p4">
+				<div class="modalContent">
+					<img src="food\pasta\pastaconpomodoroEbasilico.jpg">
+					<p class="info"><br>
+					Pasta with the quintessential tomato and basil sauce. 
+					<br>This is the most basic and simplest cooked pasta sauce, hence it is the benchmark.
+					</p>
+					<p class= "price">
+						Price: $16.50&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('p4')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('p5')">
+				<div>
+					<img src="food\pasta\home-stylebakedpasta.jpg">
+					<p>Home Style Baked Pasta</p>
+				</div>
+			</a>
+			<div class="modal" id="p5">
+				<div class="modalContent">
+					<img src="food\pasta\home-stylebakedpasta.jpg">
+					<p class="info"><br>
+					You can never go wrong with this home-style baked pasta. 
+					<br>Pasta, layers of cheese, veggies and a tangy tomato sauce, all baked till golden and glorious.
+					</p>
+					<p class= "price">
+						Price: $21.50&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('p5')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('p6')">
+				<div>
+					<img src="food\pasta\ravioli with coconut milk & lemongrass.png">
+					<p>Ravioli with Coconut Milk & <br>Lemongrass </p>
+				</div>
+			</a>
+			<div class="modal" id="p6">
+				<div class="modalContent">
+					<img src="food\pasta\ravioli with coconut milk & lemongrass.png">
+					<p class="info"><br>
+					With this recipe you learn the art of making ravioli. 
+					<br>Ravioli is type of pasta where sheets of dough are filled with a mixture. 
+					<br>In this recipe, ravioli is stuffed with a veggie mix and then drizzled with a smooth sauce made with coconut milk, spring onions and fragrant lemongrass. 
+					</p>
+					<p class= "price">
+						Price: $26.00&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('p6')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('p7')">
+				<div>
+					<img src="food\pasta\whole wheat pasta in mushroom sauce.jpg">
+					<p>Whole Wheat Pasta in <br>Mushroom Sauce</p>
+				</div>
+			</a>
+			<div class="modal" id="p7">
+				<div class="modalContent">
+					<img src="food\pasta\whole wheat pasta in mushroom sauce.jpg">
+					<p class="info"><br>
+					For all those fungi lovers, this recipe is just the ticket! 
+					<br>This recipe calls for shells made with whole wheat flour laced with a mushroom and white wine sauce.
+					</p>
+					<p class= "price">
+						Price: $26.00&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('p7')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('p8')">
+				<div>
+					<img src="food\pasta\bolognesespaghetti.jpg">
+					<p>Bolognese Spaghetti</p>
+				</div>
+			</a>
+			<div class="modal" id="p8">
+				<div class="modalContent">
+					<img src="food\pasta\bolognesespaghetti.jpg">
+					<p class="info"><br>
+					Bolognese sauce is a meat-based sauce for pasta which originated from Bologna, Italy. 
+					<br>This recipe uses minced lamb meat, onions, tomato, lots of Parmesan and the warmth of nutmeg.
+					</p>
+					<p class= "price">
+						Price: $21.50&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('p8')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('p9')">
+				<div>
+					<img src="food\pasta\lasagna.jpg">
+					<p>Lasagna</p>
+				</div>
+			</a>
+			<div class="modal" id="p9">
+				<div class="modalContent">
+					<img src="food\pasta\lasagna.jpg">
+					<p class="info"><br>
+					Layer after layer of cheesy explosion and gorgeous meat, this comes quite close to heaven. 
+					<br>Lasagna is known to be one of the oldest types of pastas which originated in Naples, Italy.
+					</p>
+					<p class= "price">
+						Price: $27.00&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('p9')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('p10')">
+				<div>
+					<img src="food\pasta\penne ala vodka.jpg">
+					<p>Penne Ala Vodka</p>
+				</div>
+			</a>
+			<div class="modal" id="p10">
+				<div class="modalContent">
+					<img src="food\pasta\penne ala vodka.jpg">
+					<p class="info"><br>
+					A recipe that has always been a crowd pleaser!
+					<br>A palatable pasta tossed with tomatoes, cream, cheese and a splash of vodka. 
+					<br>Do not worry about the vodka as most of the alcohol burns out in the cooking process.
+					</p>
+					<p class= "price">
+						Price: $21.50&nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('p10')">[Close]</a>
+				</div>
+			</div>
+			
+			
+			<!--Pizza-->
+			<h3><i>Pizza</i></h3>
+			
+			<a onclick="toggleModal('z1')">
+				<div>
+					<img src="food\pizza\priyanka's pepperoni pizza.jpg">
+					<p>Priyanka's Pepperoni Pizza</p> 
+				</div>
+			</a>
+			<div class="modal" id="z1">
+				<div class="modalContent">
+					<img src="food\pizza\priyanka's pepperoni pizza.jpg">
+					<p class="info"><br>
+					The classic pepperoni pizza cover with world best pepperoni and together with mixture of indian style.
+					</p>
+					<p class= "price">
+						Price: $23.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('z1')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('z2')">
+				<div>
+					<img src="food\pizza\multigrain pizza.jpg">
+					<p>Multigrain Pizza</p> 
+				</div>
+			</a>
+			<div class="modal" id="z2">
+				<div class="modalContent">
+					<img src="food\pizza\multigrain pizza.jpg">
+					<p class="info"><br>
+					Good food is a combination of mouth-watering flavours and healthy ingredients. 
+					<br>Your favourite pizza gets a healthy makeover with a multi-grain base
+					</p>
+					<p class= "price">
+						Price: $19.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('z2')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('z3')">
+				<div>
+					<img src="food\pizza\Meat pizza.jpg">
+					<p>Meat Pizza</p>
+				</div>
+			</a>
+			<div class="modal" id="z3">
+				<div class="modalContent">
+					<img src="food\pizza\Meat pizza.jpg">
+					<p class="info"><br>
+					Explore the juiciness of meaty chunks embedded in gooey cheesiness. 
+					<br>It can't get better than this.
+					</p>
+					<p class= "price">
+						Price: $22.00 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('z3')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('z4')">
+				<div>
+					<img src="food\pizza\Margherita pizza.jpg">
+					<p>Margherita Pizza</p>
+				</div>
+			</a>
+			<div class="modal" id="z4">
+				<div class="modalContent">
+					<img src="food\pizza\Margherita pizza.jpg">
+					<p class="info"><br>
+					Make way for all time favourite pizza! 
+					<br>Simplifies the art of preparing this evergreen hit.
+					</p>
+					<p class= "price">
+						Price: $19.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('z4')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('z5')">
+				<div>
+					<img src="food\pizza\kebab and paneer pizza.jpg">
+					<p>Kebab and Paneer Pizza</p>
+				</div>
+			</a>
+			<div class="modal" id="z5">
+				<div class="modalContent">
+					<img src="food\pizza\kebab and paneer pizza.jpg">
+					<p class="info"><br>
+					Think out-of-the-box-cooking, think fusion food. 
+					<br>This is what you get when Italian cooking marries Indian flavours.
+					</p>
+					<p class= "price">
+						Price: $27.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('z5')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('z6')">
+				<div>
+					<img src="food\pizza\wholegrain pizza.jpg">
+					<p>Wholegrain Pizza</p>
+				</div>
+			</a>
+			<div class="modal" id="z6">
+				<div class="modalContent">
+					<img src="food\pizza\wholegrain pizza.jpg">
+					<p class="info"><br>
+					A brilliant, gorgeous looking pizza that is high on flavour yet low on calories can strike a deal with anyone, right?
+					</p>
+					<p class= "price">
+						Price: $21.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('z6')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('z7')">
+				<div>
+					<img src="food\pizza\scone pizza.jpg">
+					<p>Scone Pizza</p>
+				</div>
+			</a>
+			<div class="modal" id="z7">
+				<div class="modalContent">
+					<img src="food\pizza\scone pizza.jpg">
+					<p class="info"><br>
+					A scone based pizza.
+					<br>Thin and soft crust similar to a bread base.
+					</p>
+					<p class= "price">
+						Price: $24.00 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('z7')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('z8')">
+				<div>
+					<img src="food\pizza\vegetarian pizza.jpg">
+					<p>Vegetarian Pizza</p>
+				</div>
+			</a>
+			<div class="modal" id="z8">
+				<div class="modalContent">
+					<img src="food\pizza\vegetarian pizza.jpg">
+					<p class="info"><br>
+					Garden fresh veggies come together to create a delicious symphony for your taste-buds. 
+					<br>Lots of variety and a harmony of flavours teamed with unmatchable cheesiness.
+					</p>
+					<p class= "price">
+						Price: $19.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('z8')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('z9')">
+				<div>
+					<img src="food\pizza\mexican pizza.jpg">
+					<p>Mexican Pizza</p>
+				</div>
+			</a>
+			<div class="modal" id="z9">
+				<div class="modalContent">
+					<img src="food\pizza\mexican pizza.jpg">
+					<p class="info"><br>
+					Italian techniques combined with Mexican flavours - an unforgettable gastronomic experience!
+					</p>
+					<p class= "price">
+						Price: $21.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('z9')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('z10')">
+				<div>
+					<img src="food\pizza\mini mushroom pizza.jpg">
+					<p>Mini Mushroom Pizza</p>
+				</div>
+			</a>
+			<div class="modal" id="z10">
+				<div class="modalContent">
+					<img src="food\pizza\mini mushroom pizza.jpg">
+					<p class="info"><br>
+					Get ready to gorge on these little pockets of cheesy delights. 
+					<p>Ready in a jiffy, these are an absolute crowd pleaser!
+					</p>
+					<p class= "price">
+						Price: $23.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('z10')">[Close]</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		<br>
+		<br>
+		<hr>
+		
+		<!--Side Dishes Section-->
+		<div id="sideDish">
+			<br>
+			<br>
+			<h2>Side Dishes</h2>
+			
+			<!--bread-->
+			<h3><i>Bread</i></h3>
+			
+			<a onclick="toggleModal('b1')">
+				<div>
+					<img src="food\bread\american_sandwich_bread.jpg">
+					<p>American Sandwich Bread</p> 
+				</div>
+			</a>
+			<div class="modal" id="b1">
+				<div class="modalContent">
+					<img src="food\bread\american_sandwich_bread.jpg">
+					<p class="info"><br>
+					Fresh homemade bread or known as classic white bread. 
+					<br>Best slather with peanut butter.
+					</p>
+					<p class= "price">
+						Price: $20.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('b1')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('b2')">
+				<div>
+					<img src="food\bread\apricot cream cheese babka.jpg">
+					<p>Apricot Cream Cheese Babka</p> 
+				</div>
+			</a>
+			<div class="modal" id="b2">
+				<div class="modalContent">
+					<img src="food\bread\apricot cream cheese babka.jpg">
+					<p class="info"><br>
+					the traditional chocolate babka, which is just as amazing as you might imagine it to be. 
+					This bread tastes like the most amazing fruit and cream cheese Danish you’ll ever eat. 
+					<br>The bread is soft and sweet and the apricot-cream cheese filling is packed into every single slice. 
+					A crunchy topping provides the perfect contrast in both taste and texture.
+					</p>
+					<p class= "price">
+						Price: $24.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('b2')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('b3')">
+				<div>
+					<img src="food\bread\ciabatta bread.jpg">
+					<p>Ciabatta Bread</p>
+				</div>
+			</a>
+			<div class="modal" id="b3">
+				<div class="modalContent">
+					<img src="food\bread\ciabatta bread.jpg">
+					<p class="info"><br>
+					Everyone will love ciabatta bread for its chewy exterior and soft crumb speckled with air holes. 
+					<br>It’s the perfect bread for dunking into soup, slicing horizontally and making a sandwich, or for simply slathering with butter and eating until your heart’s content.
+					</p>
+					<p class= "price">
+						Price: $19.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('b3')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('b4')">
+				<div>
+					<img src="food\bread\monkey bread.jpg">
+					<p>Monkey Bread</p>
+				</div>
+			</a>
+			<div class="modal" id="b4">
+				<div class="modalContent">
+					<img src="food\bread\monkey bread.jpg">
+					<p class="info"><br>
+					Sweetened dough is cut into small pieces, rolled into balls, dipped in melted butter, rolled in cinnamon and brown sugar, and layered int a Bundt pan. 
+					<br>The butter and brown sugar create a caramel sauce that coats the bread once it is turned out of the pan. 
+					<br>Drizzle the top with a powdered sugar glaze, and you have the most decadent breakfast, snack or dessert.
+					</p>
+					<p class= "price">
+						Price: $24.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('b4')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('b5')">
+				<div>
+					<img src="food\bread\panettone.jpg">
+					<p>Panettone</p>
+				</div>
+			</a>
+			<div class="modal" id="b5">
+				<div class="modalContent">
+					<img src="food\bread\panettone.jpg">
+					<p class="info"><br>
+					panettone is a sweet bread loaded with candied citron, lemon zest and raisins, and baked in a cylindrical mold, which gives it a distinctive look. 
+					<br>The bread is incredibly soft and sweet, and just loaded with flavor thanks to the vanilla bean, lemon zest, raisins and candied orange peel.
+					</p>
+					<p class= "price">
+						Price: $24.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('b5')">[Close]</a>
+				</div>
+			</div>
+			
+			<!--salad-->
+			<h3><i>Salad</i></h3>
+			
+			<a onclick="toggleModal('s1')">
+				<div>
+					<img src="food\salad\cucumber salad with fresh coconut.jpg">
+					<p>Cucumber Salad With <br>Fresh Coconut</p> 
+				</div>
+			</a>
+			<div class="modal" id="s1">
+				<div class="modalContent">
+					<img src="food\salad\cucumber salad with fresh coconut.jpg">
+					<p class="info"><br>
+					Craving freshness? Look no further than this cucumber salad, also featuring onions, cashews, red chili and honey that make for great taste.
+					</p>
+					<p class= "price">
+						Price: $13.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('s1')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('s2')">
+				<div>
+					<img src="food\salad\Fruit Salad with Savoury Dressings.jpg">
+					<p>Fruit Salad with <br>Savoury Dressings</p>
+				</div>
+			</a>
+			<div class="modal" id="s2">
+				<div class="modalContent">
+					<img src="food\salad\Fruit Salad with Savoury Dressings.jpg">
+					<p class="info"><br>
+					This fruit salad is incredibly versatile - make it with one of two homemade dressings, or scrap the salad altogether and blend the fruit into a delicious smoothie.
+					</p>
+					<p class= "price">
+						Price: $15.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('s2')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('s3')">
+				<div>
+					<img src="food\salad\simple mango salad.jpg">
+					<p>Simple Mango Salad</p> 
+				</div>
+			</a>
+			<div class="modal" id="s3">
+				<div class="modalContent">
+					<img src="food\salad\simple mango salad.jpg">
+					<p class="info"><br>
+					With only three ingredients, this salad is simple and tasty.
+					</p>
+					<p class= "price">
+						Price: $14.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('s3')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('s4')">
+				<div>
+					<img src="food\salad\fennel apple salad.jpg">
+					<p>Fennel Apple Salad</p>
+				</div>
+			</a>
+			<div class="modal" id="s4">
+				<div class="modalContent">
+					<img src="food\salad\fennel apple salad.jpg">
+					<p class="info"><br>
+					Sweet-tart flavour and crisp, juicy texture. 
+					<br>A bright-tasting salad that will make everyone fresh.
+					</p>
+					<p class= "price">
+						Price: $17.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('s4')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('s5')">
+				<div>
+					<img src="food\salad\bloody caesar tomato salad.jpg">
+					<p>Bloody Caesar Tomato Salad</p>
+				</div>
+			</a>
+			<div class="modal" id="s5">
+				<div class="modalContent">
+					<img src="food\salad\bloody caesar tomato salad.jpg">
+					<p class="info"><br>
+					This salad is a step beyond the expected. 
+					<br>All the flavours you love in the classic patio-sipping Caesar drink works wonderfully here with ripe, summer tomatoes.
+					</p>
+					<p class= "price">
+						Price: $15.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('s5')">[Close]</a>
+				</div>
+			</div>
+			
+			<!--Potatoes-->
+			<h3><i>Potatoes</i></h3>
+			
+			<a onclick="toggleModal('t1')">
+				<div>
+					<img src="food\potatoes\potato latkes.jpg">
+					<p>Potato Latkes</p> 
+				</div>
+			</a>
+			<div class="modal" id="t1">
+				<div class="modalContent">
+					<img src="food\potatoes\potato latkes.jpg">
+					<p class="info"><br>
+					Cast iron's heat retention means oil holds a high temperature, so fried foods crisp quickly and evenly. 
+					<br>These traditional Jewish potato-onion fritters have tender centres and lacy rims. 
+					<br>Top them with sour cream or applesauce.
+					</p>
+					<p class= "price">
+						Price: $17.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('t1')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('t2')">
+				<div>
+					<img src="food\potatoes\creamy potato casserole.jpg">
+					<p>Creamy Potato Casserole</p> 
+				</div>
+			</a>
+			<div class="modal" id="t2">
+				<div class="modalContent">
+					<img src="food\potatoes\creamy potato casserole.jpg">
+					<p class="info"><br>
+					A little chopped ham, wedges of potatoes and a cream cheese-Gruyere sauce fill this comfort food casserole. 
+					<br>Crushed bagel chips make a crunchy topping.
+					</p>
+					<p class= "price">
+						Price: $22.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('t2')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('t3')">
+				<div>
+					<img src="food\potatoes\cripotle smashed potatoes.jpg">
+					<p>Cripotle Smashed Potatoes</p>
+				</div>
+			</a>
+			<div class="modal" id="t3">
+				<div class="modalContent">
+					<img src="food\potatoes\cripotle smashed potatoes.jpg">
+					<p class="info"><br>
+					This is the ultimate feel-good dish: two kinds of mashed potatoes with bacon. 
+					<br>Cream cheese adds richness; chipotle chili brings a subtle smoky flavour.
+					</p>
+					<p class= "price">
+						Price: $24.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('t3')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('t4')">
+				<div>
+					<img src="food\potatoes\cranberry apple sweet potatoes.jpg">
+					<p>Cranberry Apple Sweet Potatoes</p>
+				</div>
+			</a>
+			<div class="modal" id="t4">
+				<div class="modalContent">
+					<img src="food\potatoes\cranberry apple sweet potatoes.jpg">
+					<p class="info"><br>
+					Mix pantry ingredients with canned apple pie filling, canned sweet potatoes, cranberry sauce, apricot preserves, orange marmalade and chopped pecans. 
+					<br>A quick-and-easy side dish with a crunchy nut topping.
+					</p>
+					<p class= "price">
+						Price: $22.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('t4')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('t5')">
+				<div>
+					<img src="food\potatoes\calico potatoes.jpg">
+					<p>Calico Potatoes</p>
+				</div>
+			</a>
+			<div class="modal" id="t5">
+				<div class="modalContent">
+					<img src="food\potatoes\calico potatoes.jpg">
+					<p class="info"><br>
+					Bacon drippings combine with sizzling onions to give this two-potato side dish an irresistible aroma and flavour.
+					</p>
+					<p class= "price">
+						Price: $20.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('t5')">[Close]</a>
+				</div>
+			</div>
+			
+			<!--Soup-->
+			<h3><i>Soup</i></h3>
+			
+			<a onclick="toggleModal('u1')">
+				<div>
+					<img src="food\soup\chicken noodle soup.jpg">
+					<p>Chicken Noodle Soup</p> 
+				</div>
+			</a>
+			<div class="modal" id="u1">
+				<div class="modalContent">
+					<img src="food\soup\chicken noodle soup.jpg">
+					<p class="info"><br>
+					Craving a simmering, comforting bowl of hearty soup? 
+					<br>Try this easy chicken noodle, it will bring you back to life after a stressful day.
+					</p>
+					<p class= "price">
+						Price: $10.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('u1')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('u2')">
+				<div>
+					<img src="food\soup\tomatoes soup.jpg">
+					<p>Tomatoes Soup</p> 
+				</div>
+			</a>
+			<div class="modal" id="u2">
+				<div class="modalContent">
+					<img src="food\soup\tomatoes soup.jpg">
+					<p class="info"><br>
+					A simple, homemade soup made with fresh tomatoes is a perfect dinner treat. 
+					<br>Made from the best tomatoes.
+					</p>
+					<p class= "price">
+						Price: $12.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('u2')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('u3')">
+				<div>
+					<img src="food\soup\clam chowder.jpg">
+					<p>Clam Chowder</p> 
+				</div>
+			</a>
+			<div class="modal" id="u3">
+				<div class="modalContent">
+					<img src="food\soup\clam chowder.jpg">
+					<p class="info"><br>
+					A delicious, traditional, cream based chowder, this recipe calls for the standard chowder ingredients: onion, celery, potatoes, diced carrots, clams, and cream. 
+					<br>A little red wine vinegar is added before serving for extra flavour.
+					</p>
+					<p class= "price">
+						Price: $12.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('u3')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('u4')">
+				<div>
+					<img src="food\soup\potato soup.jpg">
+					<p>Potato Soup</p> 
+				</div>
+			</a>
+			<div class="modal" id="u4">
+				<div class="modalContent">
+					<img src="food\soup\potato soup.jpg">
+					<p class="info"><br>
+					Warm, comforting, and so delicious, this classic potato soup is the ultimate bowl of comfort food. 
+					<br>Because more cheese is always better.
+					</p>
+					<p class= "price">
+						Price: $10.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('u4')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('u5')">
+				<div>
+					<img src="food\soup\hearty bean soup.jpg">
+					<p>Hearty Bean Soup</p> 
+				</div>
+			</a>
+			<div class="modal" id="u5">
+				<div class="modalContent">
+					<img src="food\soup\hearty bean soup.jpg">
+					<p class="info"><br>
+					Bean soup is the perfect meal for stormy weather and busy weeknights.
+					</p>
+					<p class= "price">
+						Price: $10.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('u5')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('u6')">
+				<div>
+					<img src="food\soup\gumbo.JPG">
+					<p>Gumbo</p> 
+				</div>	
+			</a>
+			<div class="modal" id="u6">
+				<div class="modalContent">
+					<img src="food\soup\gumbo.JPG">
+					<p class="info"><br>
+					Gumbo is a stew that originated in southern Louisiana during the 18th century. 
+					<br>It consists primarily of a strongly-flavoured stock, meat or shellfish, a thickener
+					</p>
+					<p class= "price">
+						Price: $15.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('u6')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('u7')">
+				<div>
+					<img src="food\soup\italian meatball soup.jpg">
+					<p>Italian Meatball Soup</p> 
+				</div>
+			</a>
+			<div class="modal" id="u7">
+				<div class="modalContent">
+					<img src="food\soup\italian meatball soup.jpg">
+					<p class="info"><br>
+					Italian Meatball Soup is a light tomato broth loaded with veggies, lean meatballs and a sprinkling of pasta.
+					</p>
+					<p class= "price">
+						Price: $15.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('u7')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('u8')">
+				<div>
+					<img src="food\soup\beef soup.jpg">
+					<p>Beef Soup</p> 
+				</div>
+			</a>
+			<div class="modal" id="u8">
+				<div class="modalContent">
+					<img src="food\soup\beef soup.jpg">
+					<p class="info"><br>
+					This soup is packed with vegetables, tomatoes, and beef. 
+					<br>The beef gets super tender as it cooks in the soup and adds lots of flavour to the broth
+					</p>
+					<p class= "price">
+						Price: $17.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('u8')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('u9')">
+				<div>
+					<img src="food\soup\cheddar soup.jpg">
+					<p>Cheddar Soup</p> 
+				</div>
+			</a>
+			<div class="modal" id="u9">
+				<div class="modalContent">
+					<img src="food\soup\cheddar soup.jpg">
+					<p class="info"><br>
+					Onions, butter and chicken broth comprise the base for this rich cheese soup. 
+					<br>Serve this as a comforting lunch on a busy day.
+					</p>
+					<p class= "price">
+						Price: $12.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('u9')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('u10')">
+				<div>
+					<img src="food\soup\sausage soup.jpg">
+					<p>Sausage Soup</p> 
+				</div>
+			</a>
+			<div class="modal" id="u10">
+				<div class="modalContent">
+					<img src="food\soup\sausage soup.jpg">
+					<p class="info"><br>
+					Italian sausage is tasty on its own, and simmering it in the soup gives every spoonful great flavour.
+					</p>
+					<p class= "price">
+						Price: $15.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('u10')">[Close]</a>
+				</div>
+			</div>
+			
+		</div>
+		
+		<br>
+		<br>
+		<hr>
+		
+		<!--Dessert Section-->
+		<div id="dessert">
+			<br>
+			<br>
+			<h2>Desserts</h2>
+			
+			<a onclick="toggleModal('d1')">
+				<div>
+					<img src="food\dessert\abcpudding.jpg">
+					<p>ABC Pudding</p> 
+				</div>
+			</a>
+			<div class="modal" id="d1">
+				<div class="modalContent">
+					<img src="food\dessert\abcpudding.jpg">
+					<p class="info"><br>
+					The avocado is what makes this raw vegan pudding deliciously thick and creamy - It's taste is unnoticeable.
+					</p>
+					<p class= "price">
+						Price: $14.00 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('d1')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('d2')">
+				<div>
+					<img src="food\dessert\coconutdatebars.jpg">
+					<p>Coconut Date Bars</p> 
+				</div>
+			</a>
+			<div class="modal" id="d2">
+				<div class="modalContent">
+					<img src="food\dessert\coconutdatebars.jpg">
+					<p class="info"><br>
+					The on-the-go, travel-light snack bar. 
+					<br>Derived from a famous raw food bar and the ultimate in 'foodie!' .
+					<br>This is a great snack for the active lifestyle and impressive to hand out to others
+					</p>
+					<p class= "price">
+						Price: $12.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('d2')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('d3')">
+				<div>
+					<img src="food\dessert\darkchocolatepaleo.jpg">
+					<p>Dark Chocolate Paleo</p>
+				</div>
+			</a>
+			<div class="modal" id="d3">
+				<div class="modalContent">
+					<img src="food\dessert\darkchocolatepaleo.jpg">
+					<p class="info"><br>
+					Homemade chocolate that melts in your mouth. 
+					<br>Made without artificial ingredients or waxes, this wholesome treat is ideal for the health conscious individual who enjoys an indulgent treat. 
+					<br>Sweetness can be tweaked to taste, and add-in ingredients and combinations are endless.
+					</p>
+					<p class= "price">
+						Price: $17.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('d3')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('d4')">
+				<div>
+					<img src="food\dessert\lemonbluberryyogurt.jpg">
+					<p>Lemon Bluberry Yogurt</p>
+				</div>
+			</a>
+			<div class="modal" id="d4">
+				<div class="modalContent">
+					<img src="food\dessert\lemonbluberryyogurt.jpg">
+					<p class="info"><br>
+					Lemon yogurt, fresh blueberries, and honey graham crackers make an easy and delicious breakfast parfait. 
+					<br>Tasty enough for a light dessert. 
+					</p>
+					<p class= "price">
+						Price: $17.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('d4')">[Close]</a>
+				</div>
+			</div>
+			
+			<a onclick="toggleModal('d5')">
+				<div>
+					<img src="food\dessert\macaron.jpg">
+					<p>Macaron</p>
+				</div>
+			</a>
+			<div class="modal" id="d5">
+				<div class="modalContent">
+					<img src="food\dessert\macaron.jpg">
+					<p class="info"><br>
+					These are like cloud cookie sandwiches and are delicious. 
+					<br>Pipe your choice of filling on a cookie and sandwich another cookie on top.
+					<br><br>
+					6 per serving.
+					</p>
+					<p class= "price">
+						Price: $22.50 &nbsp <a class="buy" onclick="">Order Now</a>
+					</p>
+					<a class="close" onclick="toggleModal('d5')">[Close]</a>
+				</div>
+			</div>
+			
+		</div>
+		<br>
+		<br>
+		<hr>
+	</article>
+	
+	<!--Footer-->
+	<footer>This is the placeholder for footer</footer>
+	
+</body>
+</html>

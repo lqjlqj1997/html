@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<body>
+<img id="myImg" src="darkwood-plank.jpg" width="304" height="228">
+<form action="page2.html" method="get">
+<script>
+function myFunction() {
+    var x = document.getElementById("myImg").src;
+    document.getElementById("fname").innerHTML = x;
+}
+myFunction();
+</script>
+  <button type="submit" name="fname" value= "LIn" >Submit</button><br>
+</form>
+
+<p><strong>Note:</strong> The formaction attribute of the button tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

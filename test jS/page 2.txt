@@ -1,0 +1,16 @@
+<html>
+<head>
+<script>
+
+document.getElementById("fname").innerHTML = window.location.search;
+</script>
+</head>
+<body>
+<p id="fname">
+</p>
+
+</body>
+
+
+
+</html>
