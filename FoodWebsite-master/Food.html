@@ -1,0 +1,224 @@
+<!-- Creator: Looi Weng Hoong-->
+<!-- Last Modified: 21/4/2017-->
+<html>
+<head>
+	<title>Food</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel = "stylesheet" href = "homepage.css" type = "text/css"/>				
+</head>
+
+<body>	
+	<!-- navigation bar-->
+	<div class = "nav">
+		<ul>
+			<li class = "dropdown"><a href = ""><div class = "micon"></div><div class = "micon"></div><div class = "micon"></div></a>
+				<div class = "dropcontent">
+					<a href = "">Food Menu</a>
+					<br/>
+					<a href = "#containerA">Today's Special Suggestion</a>
+					<br/>
+					<a href = "#container">Today's Quotes</a>
+				</div>
+			</li>
+			<li class = "specialLogo">
+				<a href = ""><img src = "try.PNG" alt = "logo"></a>
+			</li>
+			<li>
+				<div id = "searchbar">
+					<form>
+						<input type = "text" name = "searchbar" placeholder = "&#8667Search"/>
+					</form>
+				</div>
+			</li>
+			<li style="float:right">
+				<a href = "#AboutUs">About Us</a>
+			</li>
+			<li style="float:right">
+				<a href = "#contact_site">Find Us</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div>
+		<marquee behaviour = "scroll" direction = "left" scrollamount = "10"><p>Welcome to "Isola di Gourmet". We are serving delicious Italian Food. Godere!!</p></marquee>
+	</div>
+	
+	<div id = "mainpic">
+		<img src = "Main Pic.PNG" alt = "1stImg"/>
+	</div>
+	
+	<article>
+	
+	
+	<!--slideshow bar showing today main dishes-->
+	<div id = "containerA">
+		<!-- div for managing the size of the image-->
+		<div class = "specialImg">
+			<img src = "Todays Popular\chicken_parmesan.jpg" alt = "p1"/>
+			<div class = "des">
+				Chicken Parmesan Spaghetti
+			</div>
+		</div>
+		<div class = "specialImg">
+			<img src = "Todays Popular\skillet_parmesan_chicken.jpg" alt = "p2"/>
+			<div class = "des">
+				Skillet Parmesan Chicken
+			</div>
+		</div>
+		
+		<div class = "specialImg">
+			<img src = "Todays Popular\alfredo_sauce.jpg" alt = "p3"/>
+			<div class = "des">
+				Alfredo Sauce Pasta
+			</div>
+		</div>
+		
+		<div class = "specialImg">
+			<img src = "Todays Popular\lasagna.jpg" alt = "p4"/>
+			<div class = "des">
+				Lasagna
+			</div>
+		</div>
+		
+		<div class = "specialImg">
+			<img src = "Todays Popular\spinach soup.jpg" alt = "p5"/>
+			<div class = "des">
+				Spinach Soup
+			</div>
+		</div>
+		
+		<div class = "specialImg">
+			<img src = "Todays Popular\sponge cake.jpg" alt = "p6"/>
+			<div class = "des">
+				Three Ingredients Sponge Cake
+			</div>
+		</div>
+		
+		<div class = "someText2">
+			<p id = "mainText2">Enjoy Our Special Recommendations</p>
+			<hr/>
+			<hr/>
+			<p><h1 id = "TDmenu">TODAY'S SPECIAL</h1></p>
+			
+			<dl id = "TDmenu">
+				<dt>Chicken Parmesan Spaghetti</dt>
+					<dd><i> "Simple Chicken Parmesan Spaghetti definitely is the best stomach filling dish."</i></dd>
+				<br/>
+				<dt>Skillet Parmesan Chicken</dt>
+					<dd><i> Chicken with Mozarrella, Delicious!"</i></dd>
+				<br/>
+				<dt> Alfredo Sauce Pasta</dt>
+					<dd><i> "Cheesy and seafood mixed pasta... Best Combinations."</i></dd>
+				<br/>
+				<dt> Lasagna</dt>
+					<dd><i> "If you love pasta, Lasagna is definitely your choice."</i></dd>
+				<br/>
+				<dt> Spinach Soup</dt>
+					<dd><i> "Delicious and refreshing Spinach Soup, Yummy!"</i></dd>
+				<br/>
+				<dt> Three Ingredients Sponge Cake</dt>
+					<dd><i> "Sponge Cake with 3 different flavors topping will melt your heart." </i></dd>
+			</dl>
+			<center>
+				<input type="button" onclick="location.href='content1a.html'" value="FOOD MENU" />
+			</center>
+		</div>
+	</div>	
+	<script>
+	var slide = 0;
+    Show();
+    
+    function Show()
+    {
+    	var i;
+    	var x = document.getElementsByClassName("specialImg");
+        for(i=0;i<x.length;i++)
+        {
+        	x[i].style.display = "none";
+        }
+		slide++;
+		if(slide > x.length)
+		{
+			slide = 1;
+		}
+        x[slide-1].style.display = "block";
+		setTimeout(Show,10000);
+    }		
+	</script>
+	
+	
+	
+	<!--About Us section-->
+	<div>
+		<div id = "AboutUs">
+			<p id = "MainText" style = "color:white">About Us</p>
+			<img src = "thumb-1920-409891.jpg" alt = "groupphoto"/>
+			<div class = "aboutcontent">
+				<h1>Developers & Owner</h1>
+				<p>Isola di Gourmet is a Italian theme restaurant serving various delicious Italian foods.</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- "Are you craving section-->
+	<div id = "container">
+		<div id = "passage">
+			<img src = "thumb-1920-409891.jpg" alt = "pasta"/>
+			<div class = "sometext">
+				<p id = "MainText">&#10077 Today's Quotes  &#10078</p>
+				<h1> Are You Craving Now?</h1>
+				<p><i> The paragraph is used to describe</i></p>
+				<p class = "refer"> Proudly present by<br/>
+					&mdash;<span><cite>DLC Team</cite></span>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- food website description details section-->
+	<div id ="contact_site">
+		<table border = "0" width 	= "75%">
+			<tr>
+				<th rowspan = "10" width = "18%" height = "20%"><img src = "Capture.PNG" alt = "logo2" width = "70%" height = "25%"/></th>
+				<th> &nbsp &nbsp </th>
+				<th><h3> Address</h3></th>
+				<th> &nbsp &nbsp </th>
+				<th><h3> Opening Hours </h3></th>
+				<th> &nbsp &nbsp </th>
+				<th><h3> Contact </h3></th>
+				<th> &nbsp &nbsp </th>
+				<th><h3> Follow Us </h3></th>
+			</tr>
+			<tr>
+				<td> &nbsp &nbsp </td>
+				<td> Lot 406-408 &amp 429-430, Level 4, Suria KLCC, 50088 Kuala Lumpur City Centre, </td>
+				<td> &nbsp &nbsp </td>
+				<td> Mon - Fri : 9am - 9pm</td>
+				<td> &nbsp &nbsp </td>
+				<td> Contact Number:</td>
+				<td> &nbsp &nbsp </td>
+				<td rowspan = "3">
+					<a href = "#" class = "fa fa-facebook"></a>
+					<a href = "#" class = "fa fa-twitter"></a>
+					<a href = "#" class = "fa fa-instagram"></a> </td>
+			</tr>
+			<tr>
+				<td> &nbsp &nbsp </td>
+				<td>Wilayah Persekutuan Kuala Lumpur, Malaysia</td>
+				<td> &nbsp &nbsp </td>
+				<td>Sat &amp Sun : 9am - 11pm</td>
+				<td> &nbsp &nbsp </td>
+				<td>Email Address: </td>
+				<td> &nbsp &nbsp </td>
+			</tr>
+			<tr>
+				<td colspan = "9">&nbsp <br/> &nbsp </td>
+			</tr>
+			<tr>
+				<td colspan = "9"><p align = "center">Isola di Gourmet Site <br/> &copy 2017 All Rights Reserved.</p></td>
+			</tr>
+		</table>	
+	</div>
+</article>	
+</body>
+</html>

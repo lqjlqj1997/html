@@ -1,0 +1,279 @@
+body
+{
+	margin:0;
+	background-image:url("Food-Wallpaper1-HD.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+	background-size:fill;
+}
+
+.micon
+{
+	width:35px;
+	height:4px;
+	background-color:black;
+	margin:4px 0;
+}
+
+/*navigation bar*/
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	top:0;
+	height:10%;
+	width:100%;
+}
+		
+li
+{
+	float:left;
+}
+
+li a
+{
+	font-size:20px;
+	display: inline-block;
+	color: black;
+	padding: 20px 30px;
+	text-decoration: none;
+}
+
+li a:hover, .dropdown:hover
+{
+	background-color:grey;
+	color:white;
+	height:100%
+}
+
+li.dropdown
+{
+	display:inline-block;
+}
+
+.specialLogo a
+{
+	padding:0;
+}
+
+li img
+{
+	width: 100%;
+	height:100%;
+}
+
+.dropcontent
+{
+	display:none;
+	position:absolute;
+	background-color:rgba(29,41,58,0.8);
+	min-width:20%;
+	min-height:100%;
+	z-index:2;
+	top:10%;
+}
+
+.dropcontent a
+{
+	color:white;
+	padding:14px 16px;
+	text-decoration:none;
+	text-align:left;
+	display:block;
+	font-size:150%;
+}
+
+.dropcontent a:hover
+{
+	background-color:grey;
+}
+
+.dropdown:hover .dropcontent
+{
+	display:block;
+}
+
+#searchbar
+{
+	padding:10;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+marquee
+{
+	color:white;
+	font-size:150%;
+}
+
+#mainpic img
+{
+	width:100%;
+	height:100%;
+}
+
+article {
+	margin-top:10%;
+	height:100%;
+} 
+
+div table
+{
+	margin:auto;
+	padding:10px;
+	background-color:#000000;
+	color:white;
+}
+#contact_site
+{
+	height:45%;
+	width:100%;
+	display:block;
+	background-color:black;
+}
+
+#container
+{
+	height:70%;
+	overflow:hidden;
+	background-color:rgba(234,236,239,0.9);
+	margin:0;
+}
+
+#passage
+{
+	display:block;
+	overflow:hidden;
+}
+
+#passage img
+{
+	float:right;
+	height:100%;
+	width:50%;
+}
+
+
+/*about us section*/
+#MainText
+{
+	font-size:300%;
+	color:#000033;
+	margin: 50px 50px;
+}
+
+#AboutUs
+{
+	display:block;
+	overflow:hidden;
+	height:100%;
+}
+
+#AboutUs img
+{
+	margin:0 50px;
+	float:left;
+	height:60%;
+	width:40%;
+}
+
+.aboutcontent
+{
+	margin-right:10%;
+	color:#ccd8ff;
+	font-size:110%;
+	font-family:comic sans ms;
+}
+
+div.sometext
+{
+	margin:60;
+}
+
+.refer
+{
+	text-align:center;
+}
+
+/*image slideshow section*/
+#containerA
+{
+	background-color:#29293d;
+	display:block;
+	overflow:hidden;
+}
+
+div.someText2
+{
+	margin:60;
+}
+
+#mainText2
+{
+	color:white;
+	font-size:150%;
+	font-family:century gothic;
+}
+
+#TDmenu
+{
+	color:white;
+}
+
+div.specialImg
+{
+	float:right;
+	animation:FadeIn 10s infinite;
+	margin:50px 10px;
+	display:block;
+	width:55%;
+	height:80%;
+}
+
+div.specialImg img
+{
+	width:90%;
+	height:91%;
+}
+
+.des
+{
+	margin:0 73.5px;
+	padding: 0 40px;
+	position:static;
+	right:0;
+	bottom:0;
+	color:#ffffff;
+	background-color:#29293d;
+	font-size:200%;
+}
+
+@keyframes FadeIn {
+  0% {opacity: 0;}
+  50%{opacity:1;}
+  100% {opacity: 0;}
+}
+@keyframes FadeOut {
+  0% {opacity: 1;}
+  99% {opacity: 0;}
+  100% {opacity: 0;}
+  
